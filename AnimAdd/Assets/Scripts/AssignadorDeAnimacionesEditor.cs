@@ -13,6 +13,7 @@ public class AssignadorDeAnimacionesEditor : Editor
     private bool pause = false;
     private int previousSelectedAnimationIndex = -1;
     private int previousSelectedCategoryIndex = -1;
+    private Animator previousSelectedAnimator;
 
     private Dictionary<int, Vector3> initialPositions = new Dictionary<int, Vector3>();
     private Dictionary<int, Quaternion> initialRotations = new Dictionary<int, Quaternion>();
@@ -31,8 +32,23 @@ public class AssignadorDeAnimacionesEditor : Editor
         //inspector
         DrawDefaultInspector();
 
+      
         //referencia a asignadordeanimaciones
         AssignadorDeAnimaciones assignadorDeAnimaciones = (AssignadorDeAnimaciones)target;
+
+        //assignar animacion al cambiar de personaje
+        if (assignadorDeAnimaciones.AnimatorObjetivo != previousSelectedAnimator)
+        {
+            previousSelectedAnimator = assignadorDeAnimaciones.AnimatorObjetivo;
+
+            if (assignadorDeAnimaciones.animacionesDisponibles != null && assignadorDeAnimaciones.animacionesDisponibles.Count > 0)
+            {
+                assignadorDeAnimaciones.AnimatorObjetivo.runtimeAnimatorController = CrearAnimator(assignadorDeAnimaciones.animacionesDisponibles[indiceAnimSeleccionada]);
+                assignadorDeAnimaciones.SetInitialPositionAndRotation(initialPositions[assignadorDeAnimaciones.AnimatorObjetivo.GetInstanceID()], initialRotations[assignadorDeAnimaciones.AnimatorObjetivo.GetInstanceID()]);
+                assignadorDeAnimaciones.ResetPositionAndRotation();
+            }
+        }
+
 
         if (assignadorDeAnimaciones.AnimatorObjetivo != null &&
         assignadorDeAnimaciones.AnimatorObjetivo.avatar != null &&
