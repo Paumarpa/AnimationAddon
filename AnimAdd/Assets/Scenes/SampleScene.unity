@@ -181,7 +181,7 @@ PrefabInstance:
     - target: {fileID: 5866666021909216657, guid: 6449d433f4fa29641b3ff1e09e7bb6b8, type: 3}
       propertyPath: m_Controller
       value: 
-      objectReference: {fileID: 666063853}
+      objectReference: {fileID: 961907775}
     - target: {fileID: 5866666021909216657, guid: 6449d433f4fa29641b3ff1e09e7bb6b8, type: 3}
       propertyPath: m_CullingMode
       value: 0
@@ -251,6 +251,22 @@ PrefabInstance:
       propertyPath: _animatorObjetivo
       value: 
       objectReference: {fileID: 1377768589}
+    - target: {fileID: 2685026091263658429, guid: 9e9eb89f58ff244479ad80713101f3a2, type: 3}
+      propertyPath: animacionesDisponibles.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2685026091263658429, guid: 9e9eb89f58ff244479ad80713101f3a2, type: 3}
+      propertyPath: animacionesDisponibles.Array.data[0]
+      value: 
+      objectReference: {fileID: 7400000, guid: 5e8f9085895c63b43b3766caa8e356ac, type: 2}
+    - target: {fileID: 2685026091263658429, guid: 9e9eb89f58ff244479ad80713101f3a2, type: 3}
+      propertyPath: animacionesDisponibles.Array.data[1]
+      value: 
+      objectReference: {fileID: 7400000, guid: efab2e7e202d400409a13b540c3836d3, type: 2}
+    - target: {fileID: 2685026091263658429, guid: 9e9eb89f58ff244479ad80713101f3a2, type: 3}
+      propertyPath: animacionesDisponibles.Array.data[2]
+      value: 
+      objectReference: {fileID: 7400000, guid: c6ac4a94427f386449ada65572e0893e, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9e9eb89f58ff244479ad80713101f3a2, type: 3}
 --- !u!4 &454104051 stripped
@@ -332,31 +348,17 @@ PrefabInstance:
     - target: {fileID: 5866666021909216657, guid: da9d4caec580f9f41b7a2471de7fedc3, type: 3}
       propertyPath: m_Controller
       value: 
-      objectReference: {fileID: 9100000, guid: c4c7ab3a9bcbf944a8b652af8238c337, type: 2}
+      objectReference: {fileID: 0}
+    - target: {fileID: 5866666021909216657, guid: da9d4caec580f9f41b7a2471de7fedc3, type: 3}
+      propertyPath: m_CullingMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5866666021909216657, guid: da9d4caec580f9f41b7a2471de7fedc3, type: 3}
+      propertyPath: m_ApplyRootMotion
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: da9d4caec580f9f41b7a2471de7fedc3, type: 3}
---- !u!91 &666063853
-AnimatorController:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: 
-  serializedVersion: 5
-  m_AnimatorParameters: []
-  m_AnimatorLayers:
-  - serializedVersion: 5
-    m_Name: Default
-    m_StateMachine: {fileID: 1664670927}
-    m_Mask: {fileID: 0}
-    m_Motions: []
-    m_Behaviours: []
-    m_BlendingMode: 0
-    m_SyncedLayerIndex: -1
-    m_DefaultWeight: 0
-    m_IKPass: 0
-    m_SyncedLayerAffectsTiming: 0
-    m_Controller: {fileID: 666063853}
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -451,6 +453,28 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!91 &961907775
+AnimatorController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  serializedVersion: 5
+  m_AnimatorParameters: []
+  m_AnimatorLayers:
+  - serializedVersion: 5
+    m_Name: Default
+    m_StateMachine: {fileID: 1476765657}
+    m_Mask: {fileID: 0}
+    m_Motions: []
+    m_Behaviours: []
+    m_BlendingMode: 0
+    m_SyncedLayerIndex: -1
+    m_DefaultWeight: 0
+    m_IKPass: 0
+    m_SyncedLayerAffectsTiming: 0
+    m_Controller: {fileID: 961907775}
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
@@ -535,85 +559,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 15.134, y: 180, z: 0}
---- !u!1102 &972206619
-AnimatorState:
-  serializedVersion: 6
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: 001_Idle
-  m_Speed: 1
-  m_CycleOffset: 0
-  m_Transitions: []
-  m_StateMachineBehaviours: []
-  m_Position: {x: 50, y: 50, z: 0}
-  m_IKOnFeet: 0
-  m_WriteDefaultValues: 1
-  m_Mirror: 0
-  m_SpeedParameterActive: 0
-  m_MirrorParameterActive: 0
-  m_CycleOffsetParameterActive: 0
-  m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: f622a82f9480d824da8e454083065150, type: 2}
-  m_Tag: 
-  m_SpeedParameter: 
-  m_MirrorParameter: 
-  m_CycleOffsetParameter: 
-  m_TimeParameter: 
 --- !u!4 &1184383557 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 7eef50b42c85e524fba87a9979f19ebe, type: 3}
   m_PrefabInstance: {fileID: 1987196629}
   m_PrefabAsset: {fileID: 0}
---- !u!1102 &1216664064
-AnimatorState:
-  serializedVersion: 6
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: 001_Idle
-  m_Speed: 1
-  m_CycleOffset: 0
-  m_Transitions: []
-  m_StateMachineBehaviours: []
-  m_Position: {x: 50, y: 50, z: 0}
-  m_IKOnFeet: 0
-  m_WriteDefaultValues: 1
-  m_Mirror: 0
-  m_SpeedParameterActive: 0
-  m_MirrorParameterActive: 0
-  m_CycleOffsetParameterActive: 0
-  m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: f622a82f9480d824da8e454083065150, type: 2}
-  m_Tag: 
-  m_SpeedParameter: 
-  m_MirrorParameter: 
-  m_CycleOffsetParameter: 
-  m_TimeParameter: 
---- !u!1107 &1271468982
-AnimatorStateMachine:
-  serializedVersion: 6
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: Default
-  m_ChildStates:
-  - serializedVersion: 1
-    m_State: {fileID: 1216664064}
-    m_Position: {x: 200, y: 0, z: 0}
-  m_ChildStateMachines: []
-  m_AnyStateTransitions: []
-  m_EntryTransitions: []
-  m_StateMachineTransitions: {}
-  m_StateMachineBehaviours: []
-  m_AnyStatePosition: {x: 50, y: 20, z: 0}
-  m_EntryPosition: {x: 50, y: 120, z: 0}
-  m_ExitPosition: {x: 800, y: 120, z: 0}
-  m_ParentStateMachinePosition: {x: 800, y: 20, z: 0}
-  m_DefaultState: {fileID: 1216664064}
 --- !u!95 &1377768589 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 5866666021909216657, guid: 6449d433f4fa29641b3ff1e09e7bb6b8, type: 3}
@@ -722,7 +672,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1107 &1664670927
+--- !u!1107 &1476765657
 AnimatorStateMachine:
   serializedVersion: 6
   m_ObjectHideFlags: 1
@@ -732,7 +682,7 @@ AnimatorStateMachine:
   m_Name: Default
   m_ChildStates:
   - serializedVersion: 1
-    m_State: {fileID: 972206619}
+    m_State: {fileID: 1777699934}
     m_Position: {x: 200, y: 0, z: 0}
   m_ChildStateMachines: []
   m_AnyStateTransitions: []
@@ -743,29 +693,33 @@ AnimatorStateMachine:
   m_EntryPosition: {x: 50, y: 120, z: 0}
   m_ExitPosition: {x: 800, y: 120, z: 0}
   m_ParentStateMachinePosition: {x: 800, y: 20, z: 0}
-  m_DefaultState: {fileID: 972206619}
---- !u!91 &1795473935
-AnimatorController:
-  m_ObjectHideFlags: 0
+  m_DefaultState: {fileID: 1777699934}
+--- !u!1102 &1777699934
+AnimatorState:
+  serializedVersion: 6
+  m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: 
-  serializedVersion: 5
-  m_AnimatorParameters: []
-  m_AnimatorLayers:
-  - serializedVersion: 5
-    m_Name: Default
-    m_StateMachine: {fileID: 1271468982}
-    m_Mask: {fileID: 0}
-    m_Motions: []
-    m_Behaviours: []
-    m_BlendingMode: 0
-    m_SyncedLayerIndex: -1
-    m_DefaultWeight: 0
-    m_IKPass: 0
-    m_SyncedLayerAffectsTiming: 0
-    m_Controller: {fileID: 1795473935}
+  m_Name: 01_NeutralIdle
+  m_Speed: 1
+  m_CycleOffset: 0
+  m_Transitions: []
+  m_StateMachineBehaviours: []
+  m_Position: {x: 50, y: 50, z: 0}
+  m_IKOnFeet: 0
+  m_WriteDefaultValues: 1
+  m_Mirror: 0
+  m_SpeedParameterActive: 0
+  m_MirrorParameterActive: 0
+  m_CycleOffsetParameterActive: 0
+  m_TimeParameterActive: 0
+  m_Motion: {fileID: 7400000, guid: 2893f95e7a96f8649818daf545870576, type: 2}
+  m_Tag: 
+  m_SpeedParameter: 
+  m_MirrorParameter: 
+  m_CycleOffsetParameter: 
+  m_TimeParameter: 
 --- !u!1001 &1987196629
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -824,7 +778,15 @@ PrefabInstance:
     - target: {fileID: 5866666021909216657, guid: 7eef50b42c85e524fba87a9979f19ebe, type: 3}
       propertyPath: m_Controller
       value: 
-      objectReference: {fileID: 1795473935}
+      objectReference: {fileID: 0}
+    - target: {fileID: 5866666021909216657, guid: 7eef50b42c85e524fba87a9979f19ebe, type: 3}
+      propertyPath: m_CullingMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5866666021909216657, guid: 7eef50b42c85e524fba87a9979f19ebe, type: 3}
+      propertyPath: m_ApplyRootMotion
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7eef50b42c85e524fba87a9979f19ebe, type: 3}
 --- !u!1 &2034981768
